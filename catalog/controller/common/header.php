@@ -26,6 +26,24 @@ class ControllerCommonHeader extends Controller {
 
 		$data['title'] = $this->document->getTitle();
 
+		
+		/*from footer */
+		$data['text_information'] = $this->language->get('text_information');
+		$data['text_service'] = $this->language->get('text_service');
+		$data['text_contact'] = $this->language->get('text_contact');
+
+		$data['informations'] = array();
+
+		foreach ($this->model_catalog_information->getInformations() as $result) {
+			if ($result['bottom']) {
+				$data['informations'][] = array(
+					'title' => $result['title'],
+					'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+				);
+			}
+		}
+
+		/**/
 		$data['base'] = $server;
 		$data['description'] = $this->document->getDescription();
 		$data['keywords'] = $this->document->getKeywords();

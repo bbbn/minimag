@@ -82,7 +82,10 @@
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
+
         <li><a href="./">Главная</a></li>
+        <li><a href="<?php echo $informations[1]['href']; ?>"><?php echo $informations[1]['title']; ?></a></li>
+        <!-- <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li> -->
         <?php foreach ($categories as $category) { ?>
         <?php if ($category['children']) { ?>
         <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
@@ -98,6 +101,7 @@
             </div>
             <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
         </li>
+
         <?php } else { ?>
         <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
         <?php } ?>
