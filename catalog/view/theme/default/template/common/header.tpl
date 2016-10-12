@@ -69,7 +69,7 @@
           <?php } ?>
         </div>
       </div>
-      <div class="col-sm-9"><?php echo $search; ?>
+      <!-- <div class="col-sm-9"><?php echo $search; ?> -->
       </div>
      
       <!-- <div class="col-sm-3"><?php echo $cart; ?></div> -->

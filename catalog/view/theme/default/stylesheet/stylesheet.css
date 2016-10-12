@@ -601,6 +601,8 @@ h2.price {
 }
 .product-thumb .price {
 	color: #444;
+	font-size: 18pt;
+	font-style: bold;
 }
 .product-thumb .price-new {
 	font-weight: 600;
