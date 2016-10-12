@@ -49,7 +49,9 @@
     <?php echo $language; ?>
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+        <li><a  href=""><i class="fa fa-home"></i></a> <span class="header_contact" class="hidden-xs hidden-sm hidden-md"><?php echo $address; ?></span></li>
+        <li><a  href=""><i class="fa fa-phone"></i></a> <span class="header_contact" class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+        
         
       </ul>
     </div>
